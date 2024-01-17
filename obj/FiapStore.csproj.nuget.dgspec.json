@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\postem\\OneDrive\\postech\\FiapStoreDapper\\FiapStore.csproj": {}
+    "C:\\codigos\\postech\\NetPersistance\\FiapStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\postem\\OneDrive\\postech\\FiapStoreDapper\\FiapStore.csproj": {
+    "C:\\codigos\\postech\\NetPersistance\\FiapStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\postem\\OneDrive\\postech\\FiapStoreDapper\\FiapStore.csproj",
+        "projectUniqueName": "C:\\codigos\\postech\\NetPersistance\\FiapStore.csproj",
         "projectName": "FiapStore",
-        "projectPath": "C:\\Users\\postem\\OneDrive\\postech\\FiapStoreDapper\\FiapStore.csproj",
+        "projectPath": "C:\\codigos\\postech\\NetPersistance\\FiapStore.csproj",
         "packagesPath": "C:\\Users\\postem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\postem\\OneDrive\\postech\\FiapStoreDapper\\obj\\",
+        "outputPath": "C:\\codigos\\postech\\NetPersistance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\postem\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,26 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.15, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

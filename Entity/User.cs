@@ -8,11 +8,16 @@ namespace FiapStore.Entity
         public string? Name { get; set; }
         public string? Email { get; set; }
 
-        public ICollection<Pedido>? Pedidos { get; set; }
+        public ICollection<Order>? Orders { get; set; }
 
         public User() { }
 
         public User(CreateUserDTO user) { 
+            this.Name = user.Name;
+        }
+        public User(UpdateUserDTO user)
+        {
+            this.Id = user.Id;
             this.Name = user.Name;
         }
 

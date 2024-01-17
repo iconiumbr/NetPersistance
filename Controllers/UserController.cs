@@ -32,6 +32,15 @@ namespace FiapStore.Controllers
 
         }
 
+        [HttpGet]
+        [Route("getWithOrders")]
+        public IActionResult GetUsersWithOrders(int id)
+        {
+            return Ok(_userRepository.GetWithOrders(id));
+
+        }
+
+
         [HttpPost]
         public IActionResult CreateUser([FromBody] CreateUserDTO user)
         {
@@ -41,9 +50,9 @@ namespace FiapStore.Controllers
         }
 
         [HttpPut]
-        public IActionResult UpdateUser([FromBody] User user) 
+        public IActionResult UpdateUser([FromBody] UpdateUserDTO user) 
         {
-            _userRepository.Update(user);
+            _userRepository.Update(new Entity.User(user));
             return Ok("sucessfully updated");
 
         }
