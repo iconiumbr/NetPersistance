@@ -154,3 +154,6 @@ C:\codigos\postech\NetPersistance\obj\Debug\net7.0\scopedcss\bundle\FiapStore.st
 C:\codigos\postech\NetPersistance\obj\Debug\net7.0\FiapStore.csproj.CopyComplete
 C:\codigos\postech\NetPersistance\obj\Debug\net7.0\FiapStore.genruntimeconfig.cache
 C:\codigos\postech\NetPersistance\obj\Debug\net7.0\ref\FiapStore.dll
+C:\codigos\postech\NetPersistance\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\codigos\postech\NetPersistance\bin\Debug\net7.0\FiapStore.xml
+C:\codigos\postech\NetPersistance\obj\Debug\net7.0\FiapStore.xml

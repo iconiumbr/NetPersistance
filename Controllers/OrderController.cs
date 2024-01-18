@@ -11,10 +11,12 @@ namespace FiapStore.Controllers
     public class OrderController : ControllerBase
     {
         private IOrderRepository _orderRepository;
+        private readonly ILogger<OrderController> _logger;
 
-        public OrderController(IOrderRepository orderRepository)
+        public OrderController(IOrderRepository orderRepository, ILogger<OrderController> logger)
         {
             _orderRepository = orderRepository;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -35,8 +37,16 @@ namespace FiapStore.Controllers
         [HttpPost]
         public IActionResult CreateOrder([FromBody] CreateOrderDTO order)
         {
-            _orderRepository.Create(new Entity.Order(order));
-            return Ok("sucessfully created");
+            try
+            {
+                _orderRepository.Create(new Entity.Order(order));
+                return Ok("sucessfully created");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex,"Create Order");
+                return BadRequest(ex.Message);
+            }
 
         }
 

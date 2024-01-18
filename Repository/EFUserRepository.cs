@@ -19,6 +19,13 @@ namespace FiapStore.Repository
                     return u;
                 }).FirstOrDefault();
         }
+
+        public User GetWithUserPassword(
+            string UserName,
+            string Password)
+        {
+            return _context.DbUser.FirstOrDefault(u => u.UserName == UserName && u.Password == Password);
+        }
    
     }
 

@@ -1,4 +1,5 @@
 ﻿using FiapStore.DTO;
+using FiapStore.Enums;
 using System.Security.Cryptography.X509Certificates;
 
 namespace FiapStore.Entity
@@ -7,6 +8,10 @@ namespace FiapStore.Entity
     {
         public string? Name { get; set; }
         public string? Email { get; set; }
+        public string? UserName { get; set; }
+        public string? Password { get; set; }
+        public PermissionType Permission { get; set; }
+
 
         public ICollection<Order>? Orders { get; set; }
 
@@ -14,6 +19,10 @@ namespace FiapStore.Entity
 
         public User(CreateUserDTO user) { 
             this.Name = user.Name;
+            this.Email = user.Email;
+            this.UserName = user.Username;
+            this.Password = user.Password;
+            this.Permission = user.PermissionType;
         }
         public User(UpdateUserDTO user)
         {
